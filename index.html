@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Family book</title>
+    </head>
+    <body>
+        <h1> Family book</h1>
+        <hr> </hr>
+        <img id="family_image" src="https://fnog8yl5ubvaayhyo7xxxw-on.drv.tw/Family%20Book/FB1.jpg">
+        <h3 id="one">1.our family book</h3>
+        <button type="button" onclick="family()">Next</button>
+    </body>
+</html>
+<hr>
+<script>
+var names=[
+"2. my Father (Syed vilayat hussain)",
+" 3. my mother (Syeda qudsia hussain)",
+" 4. my elder sister (Syeda najaf hussain)",
+"5. my younger brother (Syed mohammed shafi hussain)",
+" 6. my grandfather (Syed enayat hussain jagirdar)",
+" 7. me (Syed dayam hussain)"
+];
+var image=[
+    "father.jpg",
+    "mother.jpg",
+    "sister.jpg",
+    "brother.jpg",
+    "grandfather.jpg",
+    "me.jpg",
+];
+var i=0
+function family(){
+    document.getElementById("one").innerHTML=names[i];
+    document.getElementById("family_image").src=image[i];
+    i++
+    if(i==6){
+        i=0;
+    }
+}
+</script>
+</body>
+</html>
