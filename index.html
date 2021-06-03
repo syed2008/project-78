@@ -1,43 +1,31 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Family book</title>
-    </head>
-    <body>
-        <h1> Family book</h1>
-        <hr> </hr>
-        <img id="family_image" src="https://fnog8yl5ubvaayhyo7xxxw-on.drv.tw/Family%20Book/FB1.jpg">
-        <h3 id="one">Our Family Book</h3>
-        <button type="button" onclick="family()">Next</button>
-    </body>
-</html>
-<hr>
-<script>
-var names=[
-" My Father (Syed Vilayat Hussain)",
-" My Mother (Syeda Qudsia Hussain)",
-"   My Elder Sister (Syeda Najaf Hussain)",
-" My Younger Brother (Syed Mohammed Shafi Hussain)",
-" My Grandfather (Syed Enayat Hussain Jagirdar)",
-" 7. Me (Syed Dayam Hussain)"
-];
-var image=[
-    "father.jpg",
-    "mother.jpg",
-    "sister.jpg",
-    "brother.jpg",
-    "grandfather.jpg",
-    "Me.jpg"
-];
-var i=0
-function family(){
-    document.getElementById("one").innerHTML=names[i];
-    document.getElementById("family_image").src=image[i];
-    i++
-    if(i==6){
-        i=0;
-    }
-}
-</script>
+<head>
+	<title>Project 87</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body_background">
+
+	<center>
+
+	<h2 class="btn-primary"> SUPERHERO</h2>
+
+
+	<div id="head_info" class="btn-danger">
+		<h3>Current Width  = <span id="current_width">30</span> </h3>
+		<h3>Current Height  = <span id="current_height">30</span> </h3>
+	</div>
+	<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script>
 </body>
 </html>

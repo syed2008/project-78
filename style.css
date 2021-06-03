@@ -1,24 +1,42 @@
-body {
-    text-align: center;
-    background-color: antiquewhite;
+.body_background 
+{
+    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/Superhero-Featured-Cropped-Cropped-e1577681032672.jpg");
+    background-position: center;
+    background-size: cover;
 }
-#family_image{
-    width: 290px;
+#myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
 }
-button {
-    font-size: 25;
-    background-color: azure;
-    border-radius: 20;
-    color: black;
+
+h2
+{
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+ }
+h3
+{
+	display: inline-block;
 }
-h1{
-    font-size: 40px;
-    color: blue;
-    text-decoration: underline;
+span
+{
+	color: black;	
 }
-h3{
-    font-size: 28px;
-    color: burlywood;
-    font-weight: bold;
-    text-decoration: underline;
+a
+{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+    float: left;
+    border-radius: 10px;
 }
+#head_info
+{
+	width: 600px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+ 
